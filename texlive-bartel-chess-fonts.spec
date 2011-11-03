@@ -1,3 +1,9 @@
+# revision 20619
+# category Package
+# catalog-ctan /fonts/bartel-chess-fonts
+# catalog-date 2010-11-29 08:56:06 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-bartel-chess-fonts
 Version:	20101129
 Release:	1
@@ -138,6 +144,7 @@ The fonts are provided as MetaFont source.
 %doc %{_texmfdistdir}/doc/fonts/bartel-chess-fonts/other-sources/screengrid.mf
 %doc %{_texmfdistdir}/doc/fonts/bartel-chess-fonts/other-sources/tt.mf
 %doc %{_texmfdistdir}/doc/fonts/bartel-chess-fonts/other-sources/turnboard.mf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -148,3 +155,5 @@ The fonts are provided as MetaFont source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
