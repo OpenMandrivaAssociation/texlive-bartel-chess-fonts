@@ -145,3 +145,18 @@ The fonts are provided as MetaFont source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101129-2
++ Revision: 749450
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101129-1
++ Revision: 717884
+- texlive-bartel-chess-fonts
+- texlive-bartel-chess-fonts
+- texlive-bartel-chess-fonts
+- texlive-bartel-chess-fonts
+- texlive-bartel-chess-fonts
+
