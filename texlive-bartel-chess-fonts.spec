@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-bartel-chess-fonts
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	A set of fonts supporting chess diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bartel-chess-fonts
