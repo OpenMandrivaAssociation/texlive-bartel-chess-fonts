@@ -1,18 +1,12 @@
-# revision 20619
-# category Package
-# catalog-ctan /fonts/bartel-chess-fonts
-# catalog-date 2010-11-29 08:56:06 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-bartel-chess-fonts
-Version:	20190228
+Version:	20619
 Release:	1
 Summary:	A set of fonts supporting chess diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bartel-chess-fonts
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bartel-chess-fonts.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bartel-chess-fonts.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bartel-chess-fonts.r20619.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bartel-chess-fonts.doc.r20619.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +16,12 @@ Requires(post):	texlive-kpathsea
 The fonts are provided as MetaFont source.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -138,25 +132,10 @@ The fonts are provided as MetaFont source.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101129-2
-+ Revision: 749450
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101129-1
-+ Revision: 717884
-- texlive-bartel-chess-fonts
-- texlive-bartel-chess-fonts
-- texlive-bartel-chess-fonts
-- texlive-bartel-chess-fonts
-- texlive-bartel-chess-fonts
-
