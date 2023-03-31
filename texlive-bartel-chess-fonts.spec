@@ -1,6 +1,6 @@
 Name:		texlive-bartel-chess-fonts
 Version:	20619
-Release:	1
+Release:	2
 Summary:	A set of fonts supporting chess diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bartel-chess-fonts
